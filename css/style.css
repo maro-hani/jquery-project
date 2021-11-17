@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* ============ Nav styling =============== */
+nav {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  color: white !important;
+  transition: background-color 1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+/* ============ home styling ============= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../images/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+header #headerContent {
+  padding-left: 3rem;
+}
+header #headerContent h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+header .icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: solid 1px white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+header #icons {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+header #icons span a {
+  font-size: 1.3rem;
+  color: white;
+}
+header span {
+  color: #ff206e;
+}
+
+/* =============== start About styling ============= */
+.aboutContainer {
+  background-image: url(../images/light_dot.jpg);
+}
+.aboutContainer .titleAbout h2 {
+  font-size: 3rem;
+  position: relative;
+}
+.aboutContainer .titleAbout h2::after {
+  content: "ABOUT";
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.1;
+  left: 50%;
+  transform: translate(-50%,-25%);
+  font-weight: 900;
+  
+  
+}
+.aboutContainer .infoAbout span {
+  color: #ff206e;
+  font-weight: normal;
+  font-size: 1.4rem;
+  display: block;
+  padding: 5px 0px;
+}
+
+/* =============== start services styling ============= */
+.servicesContainer {
+  background-image: url("../images/dark_dot.jpg");
+}
+.servicesContainer .titleServices h2 {
+  font-size: 3rem;
+  position: relative;
+  color: white;
+}
+.servicesContainer .titleServices h2::after {
+  content: "SERVICES";
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.1;
+  left: 50%;
+  transform: translate(-50%,-25%);
+  font-weight: bold;
+}
+.servicesContainer .titleServices p
+{
+    color: white;
+    padding-top: 2rem;
+}
+.itemServices {
+  background-color: white;
+  margin-top: 10%;
+}
+.itemServices h4 {
+  font-weight: bolder;
+  position: relative;
+}
+.itemServices h4::after {
+  content: " ";
+  background: #ff206e;
+  width: 4rem;
+  height: 0.1rem;
+  position: absolute;
+  top: 120%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.itemServices p {
+  font-size: 1.1rem;
+}
+.iconServices {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 2px solid #fff;
+  background-color: black;
+  border-radius: 50%;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.iconServices i {
+  font-size: 2rem;
+  color: white;
+}
+
+
+/* scroll to top button styling */
+.btnUp
+{
+    position: fixed;
+    top: 90vh;
+    right: 20px;
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(0.65,0.05,0.36,1);
+    z-index: 9999;
+}
+.btnUp i
+{
+    color: white;
+   transition: all .3s cubic-bezier(0.65,0.05,0.36,1);
+}
+.btnUp:hover.btnUp i
+{
+color: black;
+transform: scale(1.3);
+}
